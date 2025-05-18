@@ -161,20 +161,4 @@ To be continued...
 
 ## Project Structure
 
-classic-cinema-ai-analysis/
-│
-├── .gitignore # Specifies intentionally untracked files for Git
-├── FinalProject.ipynb # The main Jupyter Notebook with all code and analysis
-├── README.md # This file: project overview and instructions
-├── requirements.txt # Python dependencies for reproducibility
-│
-├── data/ # Folder for all project data (should be in .gitignore if large and not tracked)
-│ ├── IMDb/ # For storing downloaded IMDb .tsv.gz files
-│ │ ├── name.basics.tsv.gz
-│ │ ├── title.akas.tsv.gz
-│ │ └── ... (other IMDb files)
-│ └── Wikimedia/ # For storing cached Wikidata query results
-│ ├── wikidata_movie_data.csv
-│ └── wikidata_person_data.csv
-
 To be continued...
