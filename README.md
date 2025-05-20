@@ -125,7 +125,7 @@ To be continued...
     - If you (or the user) have already run the Wikidata fetching parts of the notebook (Sections 2.3.1 Parts 2 and 3), two CSV files will be generated:
       - `wikidata_movie_data.csv`
       - `wikidata_person_data.csv`
-    - The notebook saves these to `data/Wikimedia/`. If you want to provide these pre-fetched files to users (e.g., via a separate download link like Google Drive, as mentioned in your notebook, or if they are small enough, by committing them to Git LFS if you choose to use it):
+
       - Create a folder structure `classic-cinema-ai-analysis/data/Wikimedia/`.
       - Place `wikidata_movie_data.csv` and `wikidata_person_data.csv` into this `data/Wikimedia/` directory.
     - _Note on sharing cache files:_ Your original notebook mentioned a Google Drive link. If you continue to use that for distributing these cache files, update the link here:
@@ -134,15 +134,15 @@ To be continued...
 6.  **Configure Data Path in Notebook (`FinalProject.ipynb`):**
     - Open `FinalProject.ipynb`.
     - The notebook uses a variable, likely `GOOGLE_DRIVE_PATH` in your `load_imdb_dataset` function, and `WIKIDATA_CACHE_DIR` in the Wikidata fetching sections, to locate data files.
-    - **For IMDb Data:** The `load_imdb_dataset` function in your notebook refers to `GOOGLE_DRIVE_PATH`. You should modify this function or the variable it uses to point to the local `data/IMDb/` relative path.
-      - Example: If `load_imdb_dataset` is called like `load_imdb_dataset('title.basics.tsv.gz')`, ensure the path logic inside it correctly prepends `data/IMDb/`. One way is to set a base path variable at the top of your notebook:
+    - **For IMDb Data:** The `load_imdb_dataset` function in the notebook refers to `GOOGLE_DRIVE_PATH`. You should modify this function or the variable it uses to point to the local `data/IMDb/` relative path.
+      - Example: If `load_imdb_dataset` is called like `load_imdb_dataset('title.basics.tsv.gz')`, ensure the path logic inside it correctly prepends `data/IMDb/`. One way is to set a base path variable at the top of the notebook:
         ```python
-        # In your notebook, near the top or before data loading:
+        # In the notebook, near the top or before data loading:
         IMDB_DATA_ROOT = 'data/IMDb'
         # Then modify load_imdb_dataset to use it:
         # file_path = os.path.join(IMDB_DATA_ROOT, filename)
         ```
-    - **For Wikidata Cache:** The provided code updates for Wikidata fetching already set `WIKIDATA_CACHE_DIR = os.path.join('data', 'Wikimedia')`. Ensure this is consistent in your notebook.
+    - **For Wikidata Cache:** The provided code updates for Wikidata fetching already set `WIKIDATA_CACHE_DIR = os.path.join('data', 'Wikimedia')`. Ensure this is consistent in the notebook.
 
 ## Usage
 
