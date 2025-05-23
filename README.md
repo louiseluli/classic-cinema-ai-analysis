@@ -115,7 +115,7 @@ To be continued...
       - `title.crew.tsv.gz`
       - `title.principals.tsv.gz`
       - `title.ratings.tsv.gz`
-      - `title.episode.tsv.gz` (Verify if this file is used in your final analysis; if so, keep it listed).
+      - `title.episode.tsv.gz`
     - Create a folder structure `classic-cinema-ai-analysis/data/IMDb/`.
     - Place all downloaded IMDb `.tsv.gz` files into this `data/IMDb/` directory.
 
@@ -128,8 +128,6 @@ To be continued...
 
       - Create a folder structure `classic-cinema-ai-analysis/data/Wikimedia/`.
       - Place `wikidata_movie_data.csv` and `wikidata_person_data.csv` into this `data/Wikimedia/` directory.
-    - _Note on sharing cache files:_ Your original notebook mentioned a Google Drive link. If you continue to use that for distributing these cache files, update the link here:
-      - [Link to Pre-fetched Wikidata Cache Files on Google Drive (if applicable)](your-google-drive-link-here)
 
 6.  **Configure Data Path in Notebook (`FinalProject.ipynb`):**
     - Open `FinalProject.ipynb`.
