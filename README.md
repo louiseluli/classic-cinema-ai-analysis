@@ -122,7 +122,7 @@ To be continued...
 5.  **Wikidata Cache Files (Optional but Recommended for Faster Startup):**
 
     - The notebook is designed to fetch data directly from Wikidata if cached files are not present. This process can be very time-consuming.
-    - If you (or the user) have already run the Wikidata fetching parts of the notebook (Sections 2.3.1 Parts 2 and 3), two CSV files will be generated:
+    - If you have already run the Wikidata fetching parts of the notebook (Sections 2.3.1 Parts 2 and 3), two CSV files will be generated:
       - `wikidata_movie_data.csv`
       - `wikidata_person_data.csv`
 
